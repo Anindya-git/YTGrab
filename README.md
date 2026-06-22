@@ -12,20 +12,15 @@ A macOS-inspired dark-themed GUI for yt-dlp. Runs entirely in your browser, serv
 | **yt-dlp** | `winget install yt-dlp` or `pip install yt-dlp` |
 | **ffmpeg** | `winget install ffmpeg` (needed for merging & conversion) |
 
-> All three can also be installed via **Scoop**: `scoop install deno yt-dlp ffmpeg`
+> All three can also be installed via **Winget**: `winget install deno yt-dlp.yt-dlp ffmpeg`
 
 ---
 
 ## Quick Start (Windows)
 
-**Option 1 — Double-click:**
+**Double-click:**
 ```
-run.bat
-```
-
-**Option 2 — Command Prompt / PowerShell:**
-```bat
-deno run --allow-net --allow-run --allow-read --allow-write --allow-env main.ts
+YTGrab.vbs
 ```
 
 The app opens automatically at **http://localhost:7979**
@@ -74,7 +69,7 @@ The app opens automatically at **http://localhost:7979**
 ytdlp-gui/
 ├── main.ts     ← Deno server (API + file serving)
 ├── index.html  ← Full GUI frontend
-├── run.bat     ← Windows launcher (double-click to start)
+├── YTGrab.vbs     ← Windows launcher (double-click to start)
 └── README.md   ← This file
 ```
 
